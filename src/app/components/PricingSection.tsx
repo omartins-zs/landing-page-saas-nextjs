@@ -58,8 +58,8 @@ export default function PricingSection() {
               <button
                 className={`mt-auto inline-flex h-10 items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 ${
                   tier.highlighted
-                    ? 'bg-primary text-primary-foreground shadow hover:bg-primary/90'
-                    : 'border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground'
+                    ? 'bg-blue-600 text-white shadow hover:bg-blue-700'
+                    : 'bg-blue-500 text-white shadow hover:bg-blue-600'
                 }`}
               >
                 {tier.cta}
