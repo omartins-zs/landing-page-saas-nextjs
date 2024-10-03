@@ -36,13 +36,20 @@ export default function RootLayout({
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
-          <SignedOut>
-            <SignInButton />
-          </SignedOut>
-          <SignedIn>
-            <UserButton />
-          </SignedIn>
-          {children}
+          <header className="flex justify-between items-center p-4">
+            <div className="text-xl font-bold">Your Logo</div>
+            <div>
+              <SignedOut>
+                <SignInButton mode="modal" />
+              </SignedOut>
+              <SignedIn>
+                <UserButton afterSignOutUrl="/" />
+              </SignedIn>
+            </div>
+          </header>
+          <main>
+            {children}
+          </main>
         </body>
       </html>
     </ClerkProvider>
